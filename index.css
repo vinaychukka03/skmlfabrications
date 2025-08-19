@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nata+Sans:wght@100..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Be Vietnam Pro", sans-serif;
+}
+.vzm{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+nav h4{
+    font-size: 1rem;
+    color: #FF6600;
+    font-family: "Nata Sans", sans-serif;
+}
+nav{
+    background-color: #003366;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 10PX;
+    position: sticky;
+    top: 0%;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.6);
+}
+.nav-links{
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+nav ul li a{
+    height: 100%;
+    padding: 5px 20px;
+    text-decoration: none;
+    align-items: center;
+    color: #FF6600;
+}
+nav ul li a:hover{
+    background-color: rgba(246, 111, 0, 1);
+    backdrop-filter: blur(10px);
+    color:black;
+    border: 2px solid black;
+    border-radius: 5px;  
+}
+#menu:hover{
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#menu{
+    width: 30px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+}
+#menu span{
+    background-color: #FF6600;
+    width: 20px;
+    height: 3px;
+    margin: 1.5px;
+}
+.links{
+    display:flex ;
+    position: absolute;
+    right: 30px;
+}
+.our-promises{
+    margin: 3rem 0rem;
+    padding: 0px 30px;
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    justify-content: center;
+}
+.our-promises div{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    gap: 10px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.our-promises div img{
+    width: 3rem;
+    height: 3rem;
+}
+.promise{
+    height: 131px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+#services{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 4rem;
+}
+#services #ser{
+    display: flex;
+    color: #FF6600;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.our-Services{
+    margin: 1rem 0rem;
+    padding: 0px 40px;
+    display: grid;
+    justify-content: center;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit,minmax(330px,1fr));
+}
+
+.our-Services div{
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 15px;
+    gap: 5px;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 6px 10px rgba(0, 0, 0, 0.4);
+}
+.our-Services h4{
+    padding-top: 10px;
+}
+.our-Services img{
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+}
+#contact{
+    background-color: #E0E0E0;
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding-top: 4rem;
+}
+#contact h2{
+    padding: 20px; 
+    color: #FF6600;  
+}
+.our-about{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    align-items: center;
+    justify-content: center;
+}
+#contact form, .location-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+form input{
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+form textarea{
+    resize: none;
+    width: 300px;
+    height: 150px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+button{
+    background-color: #3086f7;
+    color: rgb(5, 4, 4);
+    font-weight: 500;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #6ba8f8;
+    color: white;
+    border: 2px solid black;
+}
+.loc{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.loc iframe{
+    width: 80vw;
+}
+input:focus {
+  background-color: #fdf0e7; 
+  border-color: #fe7417;
+  outline: none;
+}
+textarea:focus{
+  background-color: #fdf0e7; 
+  border-color: #fe7417;
+  outline: none;
+
+}
+.bottom{
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.bottom div{
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+@media (max-width:900px){
+    #menu{
+        display: flex;
+    }
+    .nav-links ul{
+        align-items: center;
+        justify-content: center;
+        height: 160px;
+        background-color: rgba(249, 231, 219, 0.11);
+        backdrop-filter: blur(10px);
+    }
+    .nav-links ul li{
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        width: 100%;
+        /* height: 50%; */
+    }
+    .links{
+        display: none;
+        flex-direction: column;
+        width: 50%;
+        position: absolute;
+        top: 45px;
+        justify-content: flex-start;
+    }
+    .nav-links li a{
+        border-radius: 5px;
+        padding:10px 30px;
+        width:50%;
+        color:black;
+        font-weight: 500;
+    } 
+    nav ul li a:hover{
+        background-color: #f0b289;
+        border: 2px solid black;
+        width: 60%;
+        border-radius: 5px;  
+    } 
+    nav h4{
+        max-width: 300px;  
+    }
+} 
+
+/* 
+1. The Professional & Reliable
+
+Primary: Deep Navy Blue (#003366)
+
+Secondary: Light Grey (#E0E0E0)
+
+Accent: Vibrant Orange (#FF6600)
+
+Text: White (#FFFFFF)
+
+Reasoning: This palette feels trustworthy and established. The orange is a great pop of energy and guides the user's eye to important actions.
+
+2. The Modern & Industrial
+
+Primary: Dark Charcoal Grey (#333333)
+
+Secondary: White (#FFFFFF)
+
+Accent: Electric Green (#00FF00) or Bright Red (#CC0000)
+
+Text: Light Grey (#E0E0E0)
+
+Reasoning: This palette is sleek, strong, and modern. The dark background makes images of fabricated products (especially metallic ones) look incredibly striking.
+
+3. The Premium & High-End
+
+Primary: Black (#000000)
+
+Secondary: Off-White/Cream (#F5F5DC)
+
+Accent: Metallic Gold (#B8860B)
+
+Text: White (#FFFFFF)
+
+Reasoning: This combination is elegant and luxurious. It communicates that your company produces a product of the highest quality, with an eye for detail.*/

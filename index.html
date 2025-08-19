@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKML Fabrications</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <nav>
+        <div id="logo">
+            <h4 style="padding-left: 20px;">SRI KANAKA MAHALAKSHMI WELDING SHOP</h4>
+        </div>
+        <div class="nav-links">
+            <ul class="links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#services" onclick="closed()">Services</a></li>
+                <li><a href="#contact" onclick="closed()">Contact Us</a></li>
+                <li><a href="#locatin" onclick="closed()">Location</a></li>
+            </ul>
+        </div>
+        <div id="menu" onclick="open_menu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <hr style="color: #FF6600;">
+    <div class="vzm">
+        <div>
+            <p>
+                <img src="./images/place.png" width="16px" height="16px"> Vizianagaram
+            </p>
+        </div>
+    </div>
+    <div class="our-promises">
+        <div class="promise">
+            <img src="./handshake.png" alt="">
+            <h3>NO VISITING CHARGE</h3>
+            <p>Free visit for inspection & measurement.</p>
+        </div>
+        <div class="promise">
+            <img src="./clock.png" alt="">
+            <h3>24/7 SERVICES</h3>
+            <p>We are 24/7 available to serve you.</p>
+        </div>
+        <div class="promise">
+            <img src="./award.png" alt="">
+            <h3>HIGH QUALITY WORK</h3>
+            <p>High quality services and products.</p>
+        </div>
+    </div>
+
+    <section id="services">
+        <div id="ser">
+            <h2>Our Services</h2>
+        </div>
+        <div class="our-Services">
+
+        </div>
+    </section>
+
+    <section id="contact" style="margin-top: 4rem;">
+        <div >
+            <h2>Contact Us</h2>
+        </div>
+        <div>
+            <form method="POST" id="form">
+                <input type="hidden" name="access_key" value="27d3b771-7098-43df-a36e-e7ecffe063b2">
+                <input type="text" name="name" placeholder="Name *" required>
+                <input type="email" name="email" placeholder="Your Email *" required>
+                <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{5}[0-9]{5}"
+                placeholder="Phone Number *" required>
+                <input name="address" id="address" placeholder="Address *" required >
+                <textarea name="message" id="" placeholder="Describe your work *" required></textarea>
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                <button type="submit" style="width: 150px; height: 45px;">Submit Form</button>
+                <div id="result"></div>
+            </form>
+        </div>
+    </section>
+
+    <section class="location-container" id="locatin" style="margin-top: 4rem;">
+        <div style="padding-top: 3rem;">
+            <h2 style="color: #FF6600; margin-top: 2rem;" >Find Us On The Map</h2>
+        </div>
+        <div class="loc">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3791.733779720173!2d83.40662929999999!3d18.130081099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3bef0017fae095%3A0x3030d08764446925!2sSri%20Kanaka%20Mahalakshmi%20Welding%20Shop!5e0!3m2!1sen!2sin!4v1755265570156!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <footer class="bottom" >
+        <hr>
+        
+        <div>
+            <p >© 2025 Sri Kanaka Mahalakshmi Welding Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
