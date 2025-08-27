@@ -1,3 +1,6 @@
+var date=new Date();
+var year=date.getFullYear();
+document.getElementById('foot').innerHTML=`© ${year} Sri Kanaka Mahalakshmi Welding Shop. All rights reserved.`;
 const menubtn=document.querySelector('.links');
 function open_menu(){
     menubtn.style.display='flex';
